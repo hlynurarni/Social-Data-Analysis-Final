@@ -1,10 +1,9 @@
-<!-- Tutorial from https://www.d3-graph-gallery.com/graph/choropleth_basic.html -->
-
 <!DOCTYPE html>
 <meta charset="utf-8">
 
 <!-- Load d3.js -->
 <script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
 
@@ -22,7 +21,7 @@ var svg = d3.select("svg"),
 var path = d3.geoPath();
 var projection = d3.geoMercator()
   .scale(70)
-  .center([0,20])
+  .center([-0.3,50])
   .translate([width / 2, height / 2]);
 
 // Data and color scale
@@ -33,8 +32,8 @@ var colorScale = d3.scaleThreshold()
 
 // Load external data and boot
 d3.queue()
-  .defer(d3.json, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")
-  //.defer(d3.csv, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world_population.csv", function(d) { data.set(d.code, +d.pop); })
+  .defer(d3.json, "Shapefiles/london_bourough_wgs84.geojson")
+  .defer(d3.csv, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world_population.csv", function(d) { data.set(d.code, +d.pop); })
   .await(ready);
 
 function ready(error, topo) {
@@ -51,8 +50,9 @@ function ready(error, topo) {
       )
       // set the color of each country
       .attr("fill", function (d) {
-        d.total = data.get(d.id) || 0;
-        return colorScale(d.total);
+        //d.total = data.get(d.id) || 0;
+        //return colorScale(d.total);
+        150;
       });
     }
 
