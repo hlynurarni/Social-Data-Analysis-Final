@@ -53,9 +53,9 @@ var color = d3.scale.linear()
   .range(['#fff', '#409A99']);
 
 var projection = d3.geo.mercator()
-  .scale(25000)
+  .scale(35000)
   // Center the Map in Colombia
-  .center([-0.3, 51.5])
+  .center([-0.5, 51.5])
   .translate([width / 2, height / 2]);
 
 var path = d3.geo.path()
