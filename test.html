@@ -53,7 +53,7 @@ var color = d3.scale.linear()
   .range(['#fff', '#409A99']);
 
 var projection = d3.geo.mercator()
-  .scale(15000)
+  .scale(150000)
   // Center the Map in Colombia
   .center([0, 50])
   .translate([width / 2, height / 2]);
@@ -161,7 +161,7 @@ function mouseover(d){
   d3.select(this).style('fill', 'orange');
 
   // Draw effects
-  textArt(nameFn(d));
+  //textArt(nameFn(d));
 }
 
 function mouseout(d){
