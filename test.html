@@ -1,4 +1,4 @@
-
+<!-- Code adapted from https://bl.ocks.org/john-guerra/43c7656821069d00dcbc -->
 
 <!DOCTYPE html>
 <meta charset="utf-8">
@@ -91,6 +91,7 @@ var bigText = g.append('text')
   .classed('big-text', true)
   .attr('x', 20)
   .attr('y', 45);
+
 // https://gist.githubusercontent.com/john-guerra/43c7656821069d00dcbc/raw/be6a6e239cd5b5b803c6e7c2ec405b793a9064dd/Colombia.geo.json
 //https://github.com/hlynurarni/Social-Data-Analysis-Final/blob/master/Shapefiles/london_bourough_wgs84.geojson
 // Load map data
@@ -161,6 +162,7 @@ function mouseover(d){
   d3.select(this).style('fill', 'orange');
 
   // Draw effects
+  nameFn(d);
   //textArt(nameFn(d));
 }
 
