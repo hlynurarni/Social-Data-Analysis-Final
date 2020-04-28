@@ -94,6 +94,14 @@ var bigText = g.append('text')
 
 // https://gist.githubusercontent.com/john-guerra/43c7656821069d00dcbc/raw/be6a6e239cd5b5b803c6e7c2ec405b793a9064dd/Colombia.geo.json
 //https://github.com/hlynurarni/Social-Data-Analysis-Final/blob/master/Shapefiles/london_bourough_wgs84.geojson
+
+// Load csv data
+d3.queue()
+  .defer(d3.json, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")
+  .defer(d3.csv, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world_population.csv", function(d) { data.set(d.code, +d.pop); })
+  .await(ready);
+
+
 // Load map data
 d3.json('Shapefiles/london_bourough_wgs84.geojson', function(error, mapData) {
   var features = mapData.features;
