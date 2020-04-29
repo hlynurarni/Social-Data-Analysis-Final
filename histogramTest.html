@@ -255,17 +255,17 @@ rect.background {
 
     duration = 750
 
-    height = {
-    let max = 1;
-    root.each(d => d.children && (max = Math.max(max, d.children.length)));
-    return max * barStep + margin.top + margin.bottom;
+    height = () => {
+        let max = 1;
+        root.each(d => d.children && (max = Math.max(max, d.children.length)));
+        return max * barStep + margin.top + margin.bottom;
     }
 
     margin = ({top: 30, right: 30, bottom: 0, left: 100})
 
     d3 = require("d3@5")
 
-        chart = {
+        chart = () => {
     const svg = d3.create("svg")
       .attr("viewBox", [0, 0, width, height]);
 
