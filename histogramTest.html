@@ -55,7 +55,7 @@ rect.background {
 
 
 <body>  
-<script type="module" src="FileAttachment.js"></script>
+<script src="FileAttachment.js"></script>
 <script>
 
 
@@ -229,7 +229,7 @@ rect.background {
     import FileAttachment from 'FileAttachment.js'; 
 
  
-    data = new FileAttachment("flare.json").json()
+    data = FileAttachment("flare.json").json()
 
     root = d3.hierarchy(data)
         .sum(d => d.value)
