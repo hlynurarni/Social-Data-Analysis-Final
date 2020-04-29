@@ -224,12 +224,14 @@ rect.background {
     };
     }
 
+    data = FileAttachment("flare.json").json()
+
     root = d3.hierarchy(data)
         .sum(d => d.value)
         .sort((a, b) => b.value - a.value)
         .eachAfter(d => d.index = d.parent ? d.parent.index = d.parent.index + 1 || 0 : 0)
 
-    data = FileAttachment("flare.json").json()
+    
 
     x = d3.scaleLinear().range([margin.left, width - margin.right])
 
