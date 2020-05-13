@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
@@ -25,21 +24,23 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <link
-    href="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.0.0.min.css"
-    rel="stylesheet" type="text/css">
-
+    <!-- RACE GRAPH -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+    <!-- ./RACE GRAPH -->
 
     <!--
     Added for Bokeh KBL plot
     -->
 
     <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.0.min.js" integrity="sha384-5Y+xuMRAbgBj/2WKUiL8yzV4fBFic1HJPo2hT3pq2IsEzbsJjj8kT2i0b1lZ7C2N" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.0.0.min.js" integrity="sha384-2ltAd1cQhavmLeBEZXGgnna8fjbw+FjvDq9m2dig4+8KVS8JcYFUQaALvLT//qHE" crossorigin="anonymous"></script>
-<script type="text/javascript">
-    Bokeh.set_log_level("info");
-</script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.0.0.min.js" integrity="sha384-2ltAd1cQhavmLeBEZXGgnna8fjbw+FjvDq9m2dig4+8KVS8JcYFUQaALvLT//qHE" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      Bokeh.set_log_level("info");
+    </script>
 
+<link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/
+    css/font-awesome.min.css"/>
 
   <style>
       .widget-box {
@@ -521,6 +522,7 @@
             </script>
 
   </head>
+
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
@@ -951,9 +953,6 @@
 
               </div>
               <div class="col-lg-5 pl-lg-5 ml-auto mt-md-5">
-
-
-
                 <div class="author-box" data-aos="fade-left">
                   <div class="d-flex mb-4">
                     <div class="mr-3">
@@ -1004,23 +1003,86 @@
 
         <div class="row mb-5 site-section">
           <div class="col-lg-7" data-aos="fade-right">
-            <img src="images/undraw_gift_card_6ekc.svg" alt="Image" class="img-fluid">
+            <!-- RACE GRAPH -->
+            <script type="text/javascript" src="race_graph1.js"></script>            
+            <style>
+              .animation {
+                  display: inline-block;
+                  text-align: center;
+              }
+              input[type=range].anim-slider {
+                  width: 374px;
+                  margin-left: auto;
+                  margin-right: auto;
+              }
+              .anim-buttons {
+                  margin: 8px 0px;
+              }
+              .anim-buttons button {
+                  padding: 0;
+                  width: 36px;
+              }
+              .anim-state label {
+                  margin-right: 8px;
+              }
+              .anim-state input {
+                  margin: 0;
+                  vertical-align: middle;
+              }
+            </style>    
+            <div class="animation">
+              <img id="_anim_imgb5d9650565914f348b43f6842536771a" width="800px">
+              <div class="anim-controls">
+                <input id="_anim_sliderb5d9650565914f348b43f6842536771a" type="range" class="anim-slider"
+                       name="points" min="0" max="1" step="1" value="0"
+                       oninput="animb5d9650565914f348b43f6842536771a.set_frame(parseInt(this.value));"></input>
+                <div class="anim-buttons">
+                  <button onclick="animb5d9650565914f348b43f6842536771a.slower()"><i class="fa fa-minus"></i></button>
+                  <button onclick="animb5d9650565914f348b43f6842536771a.first_frame()"><i class="fa fa-fast-backward">
+                      </i></button>
+                  <button onclick="animb5d9650565914f348b43f6842536771a.previous_frame()">
+                      <i class="fa fa-step-backward"></i></button>
+                  <button onclick="animb5d9650565914f348b43f6842536771a.reverse_animation()">
+                      <i class="fa fa-play fa-flip-horizontal"></i></button>
+                  <button onclick="animb5d9650565914f348b43f6842536771a.pause_animation()"><i class="fa fa-pause">
+                      </i></button>
+                  <button onclick="animb5d9650565914f348b43f6842536771a.play_animation()"><i class="fa fa-play"></i>
+                      </button>
+                  <button onclick="animb5d9650565914f348b43f6842536771a.next_frame()"><i class="fa fa-step-forward">
+                      </i></button>
+                  <button onclick="animb5d9650565914f348b43f6842536771a.last_frame()"><i class="fa fa-fast-forward">
+                      </i></button>
+                  <button onclick="animb5d9650565914f348b43f6842536771a.faster()"><i class="fa fa-plus"></i></button>
+                </div>
+                <form action="#n" name="_anim_loop_selectb5d9650565914f348b43f6842536771a" class="anim-state">
+                  <input type="radio" name="state" value="once" id="_anim_radio1_b5d9650565914f348b43f6842536771a"
+                         >
+                  <label for="_anim_radio1_b5d9650565914f348b43f6842536771a">Once</label>
+                  <input type="radio" name="state" value="loop" id="_anim_radio2_b5d9650565914f348b43f6842536771a"
+                         checked>
+                  <label for="_anim_radio2_b5d9650565914f348b43f6842536771a">Loop</label>
+                  <input type="radio" name="state" value="reflect" id="_anim_radio3_b5d9650565914f348b43f6842536771a"
+                         >
+                  <label for="_anim_radio3_b5d9650565914f348b43f6842536771a">Reflect</label>
+                </form>
+              </div>
+            </div>
+            
+            <script type="text/javascript" src="race_graph2.js"></script>
+            <!-- ./RACE GRAPH -->
           </div>
-          <div class="col-lg-5 pl-lg-5 ml-auto mt-md-5">
-            <h2 class="text-black">Communicate and gather feedback</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam.</p>
-
+          <div class="col-lg-4 pl-lg-5 ml-auto mt-md-5">
             <div class="author-box" data-aos="fade-left">
               <div class="d-flex mb-4">
                 <div class="mr-3">
-                  <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded-circle">
+                  <img src="images/firefighter_copy.png" alt="Image" class="img-fluid rounded-circle">
                 </div>
                 <div class="mr-auto text-black">
-                  <strong class="font-weight-bold mb-0">Grey Simpson</strong> <br>
-                  Co-Founder, XYZ Inc.
+                  <strong class="font-weight-bold mb-0">Chris</strong> <br>
+                  Bob's competitive friend
                 </div>
               </div>
-              <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores inventore aperiam iure?&rdquo;</blockquote>
+              <blockquote>The evolution of total incidents calls, based on stopcodes has been somewhat stable, over the past 11 years. There are 2 boroughs that stand out as the winners in the race of the most incident calls and luckily this is exactly the burough Chris was betting on.</blockquote>
             </div>
           </div>
         </div>
