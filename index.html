@@ -881,7 +881,7 @@
                         <li>Over the past 10 years, the service has responded to over 1.2 million incidents</li>
                         <li>In 2009, the incidents were around 135 thousand compared to around 105 thousand in 2019</li>
                       </ul>
-                     <div class="author-box" data-aos="fade-left">
+                     <div class="author-box" data-aos="fade-right">
                         <div class="d-flex mb-4">
                           <div class="mr-3">
                             <img src="images/firefighter_copy.png" alt="Image" class="img-fluid rounded-circle" >
@@ -972,34 +972,39 @@
         <div class="mt-5 row mb-5 site-section ">
           <div class="col-lg-7 order-1 order-lg-2" data-aos="fade-left">
 
-            <!--<img src="images/undraw_metrics_gtu7.svg" alt="Image" class="img-fluid">-->
+              <!-- IFRAME FOR CHOROPLETH -->
 
+              <div style="border: 0px solid rgb(201, 0, 1); overflow: hidden; margin: 0px auto; max-width: 736px;">
+                <iframe scrolling="no" src="bokeh_kbl_years_new.html" style="border: 0px none; margin-left: 0px; height: 559px; margin-top: 0px; width: 926px;">
+                </iframe>
+            </div>
 
-
-            <!--<div class="bk-root" id="87ef652e-bd0b-45f0-b277-932308389df3" data-root-id="100970"></div>-->
-            <div style="border: 3px solid rgb(201, 0, 1); overflow: hidden; margin: 15px auto; max-width: 736px;">
-          <iframe scrolling="no" src="bokeh_kbl_years_new.html" style="border: 0px none; margin-left: 0px; height: 559px; margin-top: 0px; width: 926px;">
-          </iframe>
-          </div>
-
-
-
+            <!-- / IFRAME FOR CHOROPLETH -->
 
 
           </div>
           <div class="col-lg-5 pr-lg-5 mr-auto mt-5 order-2 order-lg-1">
-            <h2 class="text-black">Response times - TEST</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam</p>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem neque nisi architecto autem molestias corrupti officia veniam</p>
-
-
-
+            <h2 class="text-black">Response times</h2>
+            <p class="mb-4">The average response times are different for each borough. They also change over the years! There seems to be a pattern where centrally located boroughs usually have a lower average response time, while the outer boroughs have the highest response times.</p>
             <div class="author-box" data-aos="fade-right">
-              <blockquote>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae ipsa asperiores inventore aperiam iure?&rdquo;</blockquote>
-              <a href="bokeh_kbl_years_new.html" class="btn btn-primary mr-2 mb-2">TEST BUTTON</a>
+              <div class="d-flex mb-4">
+                <div class="mr-3">
+                  <img src="images/firefighter_copy.png" alt="Image" class="img-fluid rounded-circle">
+                </div>
+                <div class="mr-auto text-black">
+                  <strong class="font-weight-bold mb-0">Bob</strong> <br>
+                  Firefighter in London
+                </div>
+              </div>
+              <blockquote>&ldquo;It's interesting to see the differences in response times between the boroughs! Did you notice that <strong>Kensington and Chelsea</strong> always have the lowest respone time while <strong>Hillingdon</strong> always has the highest?&rdquo;</blockquote>
+              <p>Try pushing the play button!</p>
             </div>
+
           </div>
+
         </div>
+
+
 
         <div class="row mb-5 site-section">
           <div class="col-lg-7" data-aos="fade-right">
@@ -1082,7 +1087,7 @@
                   Bob's competitive friend
                 </div>
               </div>
-              <blockquote>The evolution of total incidents calls, based on stopcodes has been somewhat stable, over the past 11 years. There are 2 boroughs that stand out as the winners in the race of the most incident calls and luckily this is exactly the burough Chris was betting on.</blockquote>
+              <blockquote>The evolution of total incidents calls, based on stopcodes has been somewhat stable, over the past 11 years. There are 2 boroughs that stand out as the winners in the race of the most incident calls and luckily this is exactly the borough Chris was betting on.</blockquote>
             </div>
           </div>
         </div>
