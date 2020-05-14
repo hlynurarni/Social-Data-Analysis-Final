@@ -3,6 +3,13 @@
   <head>
     <title>London Fire Incidents &mdash; Social Data Analysis and Visualisation</title>
     <meta charset="utf-8">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
@@ -625,8 +632,6 @@
                   Our mission is to explore the data they provide and deliver valuable and interesting insides.</p>
                 <div>
                   <a href="#overview-section" class="btn btn-primary mr-2 mb-2">Get Started</a>
-                  <a href="kbl_bokeh_choropleth.html" class="btn btn-primary mr-2 mb-2">TEST BUTTON</a>
-                  <a href="histogramTest.html" class="btn btn-primary mr-2 mb-2">TEST2 BUTTON</a>
                 </div>
               </div>
 
@@ -734,7 +739,7 @@
         <div class="row mb-5 site-section">
           <div class="col-lg-4" data-aos="fade-right">
             <h2 class="text-black">Video</h2>
-            <p class="mb-4">The video to the side explains the basic idea behind the project. Additionally it goes through the steps that need to be completed in order for the analysis to be possible.</p>
+          <p class="mb-4">Do you want to get a quick overview about the project? Then check out the video to the side! It explains the basic idea behind the project and goes through the steps that need to be completed in order for the analysis to be possible.</p>
           </div>
           <div class="col-lg-8 pl-lg-5 ml-auto mt-md-5">
             <video width="620" height="400" controls>
@@ -782,25 +787,66 @@
         </div>
 
         <div>
-          <div class="testimonial">
-            <div class=".col-6 .col-md-4"><h3>Bariatric Incidents</h3></div>
-            <div class=".col-md-8 mb-5">
-                <p>The dataset contains information about all non-fire (special services) incidents attended by the London Fire Brigade since January 2009. These special services include assistance to other emergency services, sometimes help with moving larger (i.e. bariatric) patients/people.</p>
-                <p class="text-black"><strong>Collected from the London Datastore</strong></p>
-                <p><a href="https://data.london.gov.uk/dataset/bariatric-incidents-attended-by-lfb" class="btn btn-primary">Source</a></p>
-            </div>
-          </div>
-        </div>
-        <div>
             <div class="testimonial">
               <div class=".col-6 .col-md-4"><h3>Postcodes in the UK</h3></div>
               <div class=".col-md-8 mb-5">
                   <p>The dataset contains geographical information about postcodes in the UK. The dataset is used to enrich the incident dataset.</p>
+                  <br>
                   <p class="text-black"><strong>Originated from The Office for National Statistics (ONS)</strong></p>
                   <p><a href="https://www.doogal.co.uk/UKPostcodes.php" class="btn btn-primary">Source</a></p>
               </div>
             </div>
           </div>
+
+          <div>
+              <div class="testimonial">
+                <div class=".col-6 .col-md-4"><h3>Hourly weather data</h3></div>
+                <div class=".col-md-8 mb-5">
+                    <p>The dataset contains hourly weather observations from London Heathrow. The dataset is used to enrich the incident dataset and provide context to the weather conditions during the incidents.</p>
+                    <br>
+                    <p class="text-black"><strong>Originated from the Met Office and available at the CEDA Archives</strong></p>
+                    <p><a href="http://data.ceda.ac.uk/badc/ukmo-midas-open/data/uk-hourly-weather-obs/dataset-version-201901/greater-london/00708_heathrow/qc-version-1" class="btn btn-primary">Source</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="testimonial">
+                <div class=".col-6 .col-md-4"><h3>House Ages in London</h3></div>
+                <div class=".col-md-8 mb-5">
+                    <p>The dataset contains information about the ages of the houses in London. This data is used to enrich the incident dataset and provide attitional information.</p>
+                    <br>
+                    <p class="text-black"><strong>Collected from the Consumer Data Research Centre</strong></p>
+                    <p><a href="https://data.cdrc.ac.uk/geodata-packs" class="btn btn-primary">Source</a></p>
+                </div>
+              </div>
+            </div>
+
+
+            <div>
+              <div class="testimonial">
+                <div class=".col-6 .col-md-4"><h3>London Borough Profiles and Atlas</h3></div>
+                <div class=".col-md-8 mb-5">
+                    <p>The dataset contains information about different statistics for the London Boroughs, covering dempgraphic, economic, social and enviromental datasets.</p>
+                    <br>
+                    <p class="text-black"><strong>Collected from the London Datastore</strong></p>
+                    <p><a href="https://data.london.gov.uk/dataset/london-borough-profiles" class="btn btn-primary">Source</a></p>
+                </div>
+              </div>
+            </div>
+
+
+            <div>
+              <div class="testimonial">
+                <div class=".col-6 .col-md-4"><h3>London Shapefiles</h3></div>
+                <div class=".col-md-8 mb-5">
+                    <p>The dataset contains shapefiles for London Boroughs and London Wards. They will used in figures to show the geographical locations of the boroughs and wards. </p>
+                    <br>
+                    <p class="text-black"><strong>Collected from the London Datastore</strong></p>
+                    <p><a href="https://data.london.gov.uk/dataset/london-borough-profiles" class="btn btn-primary">Source</a></p>
+                </div>
+              </div>
+            </div>
 
 
         <!-- ADD ADDITIONAL DATASETS USED HERE -->
@@ -968,6 +1014,197 @@
               </div>
             </div>
 
+            <!-- CHAT -->
+            <style>
+            body{
+
+            }
+            .chat-list {
+                padding: 0;
+                font-size: .8rem;
+            }
+
+            .chat-list li {
+                margin-bottom: 10px;
+                overflow: auto;
+                color: #ffffff;
+            }
+
+            .chat-list .chat-img {
+                float: left;
+                width: 48px;
+            }
+
+            .chat-list .chat-img img {
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                border-radius: 50px;
+                width: 100%;
+            }
+
+            .chat-list .chat-message {
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                border-radius: 30px;
+                background: #FFA07A;
+                display: inline-block;
+                padding: 10px 20px;
+                position: relative;
+            }
+
+            .chat-list .chat-message:before {
+                content: "";
+                position: absolute;
+                top: 15px;
+                width: 0;
+                height: 0;
+            }
+
+            .chat-list .chat-message h5 {
+                margin: 0 0 5px 0;
+                font-weight: 600;
+                line-height: 100%;
+                font-size: .9rem;
+            }
+
+            .chat-list .chat-message p {
+                line-height: 18px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .chat-list .chat-body {
+                margin-left: 20px;
+                float: left;
+                width: 70%;
+            }
+
+            .chat-list .in .chat-message:before {
+                left: -12px;
+                border-bottom: 20px solid transparent;
+                border-right: 20px solid #FFA07A;
+            }
+
+            .chat-list .out .chat-img {
+                float: right;
+            }
+
+            .chat-list .out .chat-body {
+                float: right;
+                margin-right: 20px;
+                text-align: right;
+            }
+
+            .chat-list .out .chat-message {
+                background: #fc6d4c;
+            }
+
+            .chat-list .out .chat-message:before {
+                right: -12px;
+                border-bottom: 20px solid transparent;
+                border-left: 20px solid #fc6d4c;
+            }
+
+            .card .card-header:first-child {
+                -webkit-border-radius: 0.3rem 0.3rem 0 0;
+                -moz-border-radius: 0.3rem 0.3rem 0 0;
+                border-radius: 0.3rem 0.3rem 0 0;
+            }
+            .card .card-header {
+                background: #17202b;
+                border: 0;
+                font-size: 1rem;
+                padding: .65rem 1rem;
+                position: relative;
+                font-weight: 600;
+                color: #ffffff;
+            }
+
+            .content{
+                margin-top:40px;
+            }
+            </style>
+
+
+                    <div class="mt-5 row mb-5 site-section " >
+                      <div class="container content" data-aos="fade-right">
+                      <div class="row">
+                          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                          	<div class="card">
+                          		<div class="card-header">Chat</div>
+                          		<div class="card-body height3">
+                          			<ul class="chat-list">
+                                    <li class="out">
+                                        <div class="chat-img">
+                                          <img alt="Avtar" src="images/not_bob.png">
+                                        </div>
+                                        <div class="chat-body">
+                                          <div class="chat-message">
+                                            <h5>Bob's friend</h5>
+                                            <p>Hey Bob, I read that the final number of appliances mobilised is used to determine the size of a fire in London
+                                                and that you can estimate the number of fire figthers that attended the incident by multiplying the number of pumps by 5, is it true?</p>
+                                          </div>
+                                        </div>
+                                      </li>
+                          				<li class="in">
+                          					<div class="chat-img">
+                          						<img alt="Avtar" src="images/firefighter_copy.png">
+                          					</div>
+                          					<div class="chat-body">
+                          						<div class="chat-message">
+                          							<h5>Bob</h5>
+                          							<p>Yeah, that is true! And if you look at our incident and mobilisation records you can easily find the biggest fire since 2009 based on those facts.</p>
+                          						</div>
+                          					</div>
+                          				</li>
+                          				<li class="out">
+                          					<div class="chat-img">
+                          						<img alt="Avtar" src="images/not_bob.png">
+                          					</div>
+                          					<div class="chat-body">
+                          						<div class="chat-message">
+                          							<h5>Bob's friend</h5>
+                          							<p>Wow Bob, I think I found it. Could it be that the fire happened in a Recycling plant in August 2012 where 415 fire engines were used, 106 pumps attended the fire which then means about 530 fire fighters attended the incident?!</p>
+                          						</div>
+                          					</div>
+                          				</li>
+                          				<li class="in">
+                          					<div class="chat-img">
+                          						<img alt="Avtar" src="images/firefighter_copy.png">
+                          					</div>
+                          					<div class="chat-body">
+                          						<div class="chat-message">
+                          							<h5 class="name">Bob</h5>
+                          							<p>Yeah, it was a big one.. I will never forget it, and if you are more interested you can read about it in this <a href="https://www.bbc.com/news/uk-england-london-19234182">link</a> from BBC.</p>
+                          						</div>
+                          					</div>
+                          				</li>
+                          			</ul>
+                          		</div>
+                          	</div>
+                          </div>
+                          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+
+                            <div class="container content" data-aos="fade-left">
+                                <img src="images/biggest_fire.png" alt="Image" class="img-fluid">
+                            </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <div class="mt-5 row mb-5 site-section " id="response-times">
           <div class="col-lg-7 order-1 order-lg-2" data-aos="fade-left" >
@@ -1023,7 +1260,7 @@
                   Response Time Investigator
                 </div>
               </div>
-              <blockquote>&ldquo;The size scale clearly makes a difference. The distance from the incident location to the station is much greater in Hillingdon. Note that wards that have a fire station usually have a shorter response time than other wards. Duh!&rdquo;</blockquote>
+              <blockquote>&ldquo;The size scale clearly makes a difference. On average the distance from the incident location to its closest station is 2.6x greater in Hillingdon. The greatest distance travelled to an incident in Hillingdon is 4.8x greater than in Chelsea and Kensington. Note that wards that have a fire station usually have a shorter response time than other wards. Duh!&rdquo;</blockquote>
             </div>
           </div>
         </div>
@@ -1135,184 +1372,7 @@
 
 
 
-<!-- CHAT -->
-<style>
-body{
 
-}
-.chat-list {
-    padding: 0;
-    font-size: .8rem;
-}
-
-.chat-list li {
-    margin-bottom: 10px;
-    overflow: auto;
-    color: #ffffff;
-}
-
-.chat-list .chat-img {
-    float: left;
-    width: 48px;
-}
-
-.chat-list .chat-img img {
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-    width: 100%;
-}
-
-.chat-list .chat-message {
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-    background: #FFA07A;
-    display: inline-block;
-    padding: 10px 20px;
-    position: relative;
-}
-
-.chat-list .chat-message:before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    width: 0;
-    height: 0;
-}
-
-.chat-list .chat-message h5 {
-    margin: 0 0 5px 0;
-    font-weight: 600;
-    line-height: 100%;
-    font-size: .9rem;
-}
-
-.chat-list .chat-message p {
-    line-height: 18px;
-    margin: 0;
-    padding: 0;
-}
-
-.chat-list .chat-body {
-    margin-left: 20px;
-    float: left;
-    width: 70%;
-}
-
-.chat-list .in .chat-message:before {
-    left: -12px;
-    border-bottom: 20px solid transparent;
-    border-right: 20px solid #FFA07A;
-}
-
-.chat-list .out .chat-img {
-    float: right;
-}
-
-.chat-list .out .chat-body {
-    float: right;
-    margin-right: 20px;
-    text-align: right;
-}
-
-.chat-list .out .chat-message {
-    background: #fc6d4c;
-}
-
-.chat-list .out .chat-message:before {
-    right: -12px;
-    border-bottom: 20px solid transparent;
-    border-left: 20px solid #fc6d4c;
-}
-
-.card .card-header:first-child {
-    -webkit-border-radius: 0.3rem 0.3rem 0 0;
-    -moz-border-radius: 0.3rem 0.3rem 0 0;
-    border-radius: 0.3rem 0.3rem 0 0;
-}
-.card .card-header {
-    background: #17202b;
-    border: 0;
-    font-size: 1rem;
-    padding: .65rem 1rem;
-    position: relative;
-    font-weight: 600;
-    color: #ffffff;
-}
-
-.content{
-    margin-top:40px;
-}
-</style>
-
-
-        <div class="mt-5 row mb-5 site-section " >
-          <div class="container content" data-aos="fade-right">
-          <div class="row">
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-              	<div class="card">
-              		<div class="card-header">Chat</div>
-              		<div class="card-body height3">
-              			<ul class="chat-list">
-                        <li class="out">
-                            <div class="chat-img">
-                              <img alt="Avtar" src="images/not_bob.png">
-                            </div>
-                            <div class="chat-body">
-                              <div class="chat-message">
-                                <h5>Bob's friend</h5>
-                                <p>Hey Bob, I read that the final number of appliances mobilised is used to determine the size of a fire in London 
-                                    and that you can estimate the number of fire figthers that attended the incident by multiplying the number of pumps by 5, is it true?</p>
-                              </div>
-                            </div>
-                          </li>
-              				<li class="in">
-              					<div class="chat-img">
-              						<img alt="Avtar" src="images/firefighter_copy.png">
-              					</div>
-              					<div class="chat-body">
-              						<div class="chat-message">
-              							<h5>Bob</h5>
-              							<p>Yeah, that is true! And if you look at our incident and mobilisation records you can easily find the biggest fire since 2009 based on those facts.</p>
-              						</div>
-              					</div>
-              				</li>
-              				<li class="out">
-              					<div class="chat-img">
-              						<img alt="Avtar" src="images/not_bob.png">
-              					</div>
-              					<div class="chat-body">
-              						<div class="chat-message">
-              							<h5>Bob's friend</h5>
-              							<p>Wow Bob, I think I found it. Could it be that the fire happened in a Recycling plant in August 2012 where 415 fire engines were used, 106 pumps attended the fire which then means about 530 fire fighters attended the incident?!</p>
-              						</div>
-              					</div>
-              				</li>
-              				<li class="in">
-              					<div class="chat-img">
-              						<img alt="Avtar" src="images/firefighter_copy.png">
-              					</div>
-              					<div class="chat-body">
-              						<div class="chat-message">
-              							<h5 class="name">Bob</h5>
-              							<p>Yeah, it was a big one.. I will never forget it, and if you are more interested you can read about it in this <a href="https://www.bbc.com/news/uk-england-london-19234182">link</a> from BBC.</p>
-              						</div>
-              					</div>
-              				</li>
-              			</ul>
-              		</div>
-              	</div>
-              </div>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-
-                <div class="container content" data-aos="fade-left">
-                    <img src="images/biggest_fire.png" alt="Image" class="img-fluid">
-                </div>
-                </div>
-              </div>
-          </div>
-      </div>
 
         </div>
 
@@ -1451,6 +1511,9 @@ body{
               <li>Explanatory Analysis</li>
               <li>Interactive Visualizations</li>
             </ul>
+            <h2 class="text-black mb-4 h3 font-weight-bold">Interested in learning more?</h2>
+            <p class="mb-4">Then check out the explainer notebook the team created!</p>
+
             <p><a href="https://github.com/suneman/socialdataanalysis2020/wiki" class="btn btn-primary">Class Wiki</a></p>
           </div>
         </div>
